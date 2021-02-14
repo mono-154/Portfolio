@@ -1,0 +1,244 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.section-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+  text-align: center;
+ }
+ img{
+  display: block;
+  width: 100%;
+ }
+ .wrap{
+  width: 80%;
+  margin: 0 auto 50px;
+ }
+ .flex{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+ .between{
+  justify-content: space-between;
+ }
+ .around{
+  justify-content: space-around;
+ }
+ 
+
+header {
+  height: 70px;
+  background: #000;
+}
+
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold; 
+  margin-left: 35px;
+  color: #fff;
+  line-height: 70px;
+}
+
+
+.header-nav li {
+  display: inline-block;
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+
+.header-nav a {
+  color: #fff;
+}
+
+#eyecatch {
+  height: 600px;
+  background: url(../img/bg1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+#eyecatch p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-style: italic;
+  font-weight: bold;
+  color: #ccc;
+  line-height: 1;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+.about-right h3,.about-right p {
+  margin-bottom: 15px;
+}
+.about-left,.about-right {
+  width: 45%;
+}
+.about-right ol {
+  list-style-position: inside;
+  /* リストの数字の位置 */
+}
+#business {
+  background: url(../img/bg3.jpg)no-repeat;
+  background-size: cover;
+}
+#business .section-title {
+  color: #fff;
+  padding: 40px 0;
+  margin: 0;
+}
+.business-wrap {
+  text-align: center;
+}
+.business-cat {
+  width: 28%;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding: 20px 35px 30px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+.business-cat h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.business-cat p {
+  color: #fff;
+}
+.business-cat img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+#company{
+  padding: 40px 0 70px 0;
+}
+#company .contain{
+  border-collapse: collapse;
+  width: 70%;
+  margin: 0 auto;
+}
+#company table tr{
+  border-bottom: 1px solid #333333;
+}
+#company th, #company td{
+  text-align: left;
+}
+#company th{
+  padding: 10px 0;
+}
+
+.contact {
+  background: rgb(241, 241, 241);
+}
+.contact .section-title {
+  padding: 40px 0;
+  margin: 0;
+}
+.form {
+  width: 70%;
+  margin: 0 auto;
+}
+.form > div input {
+  margin-bottom: 20px;
+  padding: 7px;
+}
+label {
+  display: inline-block;
+  width: 30%;
+}
+input, textarea {
+  box-sizing: border-box;
+  border: 1px solid #999;
+  width: 65%;
+}
+textarea {
+  vertical-align: top;
+  height: 15em;
+}
+.button-submit {
+  text-align: center;
+}
+.button {
+  padding: 10px 30px;
+  background-color: #000;
+  color: #fff;
+  margin: 30px 0;
+}
+
+#footer{
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  /* 画面768pxまでの場合適応される */
+  #hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 15px;
+    right: 20px;
+    transition: .4s;
+  }
+  #hamburger span {
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: .8s;
+  }
+  #hamburger span:nth-of-type(1) {
+    top: 10px;
+  }
+  #hamburger span:nth-of-type(2) {
+    top: 20px;
+  }
+  #hamburger span:nth-of-type(3) {
+    top: 30px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .about-left,
+  .about-right{
+    width: 80%;
+  }
+
+  .business-cat {
+    width: 80%;
+}
+
+label {
+  display: block;
+}
+.form > div {
+  margin: 0 auto;
+}
+input,textarea {
+  width: 100%;
+}
+}
+  
