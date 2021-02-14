@@ -1,0 +1,5 @@
+print('掛け算九九の表')
+for i in range(1,10):
+  for j in range(1,10):
+    print('%4d' % (i*j),end=' ')
+  print(' ')
